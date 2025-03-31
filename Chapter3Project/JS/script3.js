@@ -11,4 +11,4 @@ console.log(friendSalary);
 var ben = {
   name: "Ben Smith",
   salary: 90000
-}; 
+};   
