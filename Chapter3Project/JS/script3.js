@@ -8,7 +8,7 @@ const friends = ["James", "Dawson", "Mary"];
 console.log(friends);
 const friendSalary = [95000, 80000, 85000];
 console.log(friendSalary);
-var ben = {
+const ben = {
   name: "Ben Smith",
   salary: 90000
 };   
