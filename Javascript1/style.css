@@ -1,0 +1,171 @@
+/*Patrick Follis 3/30/2025*/
+/* CSS Adapted from https://javascript30.com/
+    Follow Along Links */
+/*
+New Element: Z-index, transition
+*/
+/* new code for images and h1, new classes buttonR, buttonG, buttonB, and buttonP */
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    min-height: 100vh;
+    margin: 0; /* Important! */
+    font-family: sans-serif;
+    background: /* changed the background*/
+      linear-gradient(49deg, forestgreen, mediumpurple, blue)
+  }
+  /* added h1 css code */
+  h1 {
+    text-align: center; 
+    font-size: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    max-width: 500px;
+    font-size: 20px;
+    line-height: 2;
+    position: relative;
+  }
+
+  /* added flex code for the images
+  .fleximage
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: space-around;
+    } */
+
+img {
+    max-width: 20%;
+    background: rgba(0,0,0,0.05);
+    border-radius: 20px;
+    }
+/* made it so that the images shrink when clicked */
+    /* used geeksforgeeks.com under the question 'how to add Onclick Effect Using CSS?' */
+img:active {
+    transform: scale(0.9);
+    }
+  
+/* commented out since its not being used
+a {
+    text-decoration: none;
+     color: black;
+     background: rgba(0,0,0,0.05);
+     border-radius: 20px;
+   } */
+
+
+/* Made Buttons that when clicked the color of the highlight changes */
+
+.buttonR {
+    margin: 2em;
+    padding: 1em;
+    border: 0;
+    border-radius: .5em;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff4d4d;
+    box-shadow: 0 .4em #b30000;
+    text-shadow: 1px 1px #b30000;
+}
+.buttonR:active {
+    background-color: #ff1a1a;
+    transform: translateY(.1em);
+    box-shadow: 0 .3em #b30000;
+}
+
+.buttonG {
+    margin: 2em;
+    padding: 1em;
+    border: 0;
+    border-radius: .5em;
+    font-size: 1rem;
+    color: white;
+    background-color: #70db70;
+    box-shadow: 0 .4em #29a329;
+    text-shadow: 1px 1px #29a329;
+}
+.buttonG:active {
+    background-color: #47d147;
+    transform: translateY(.1em);
+    box-shadow: 0 .3em #29a329;
+}
+
+.buttonB {
+    margin: 2em;
+    padding: 1em;
+    border: 0;
+    border-radius: .5em;
+    font-size: 1rem;
+    color: white;
+    background-color: #4d4dff;
+    box-shadow: 0 .4em #0000cc;
+    text-shadow: 1px 1px #0000cc;
+}
+.buttonB:active {
+    background-color: #1a1aff;
+    transform: translateY(.1em);
+    box-shadow: 0 .3em #0000cc;
+}
+
+.buttonP {
+    margin: 2em;
+    padding: 1em;
+    border: 0;
+    border-radius: .5em;
+    font-size: 1rem;
+    color: white;
+    background-color: #b84dff;
+    box-shadow: 0 .4em #7a00cc;
+    text-shadow: 1px 1px #7a00cc;
+}
+.buttonP:active {
+    background-color: #a31aff;
+    transform: translateY(.1em);
+    box-shadow: 0 .3em #7a00cc;
+}
+
+  /*New Element: Z-index*/
+  .highlight {
+    transition: all 0.2s;
+    border-bottom: 2px solid white;
+    position: absolute;
+    top: 0;
+    background: /*changed base color to light blue*/ lightblue;
+    left: 0;
+    z-index: -1;
+    border-radius: 20px;
+    display: block;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);/* changed box shadow to 30*/
+  }
+
+  /*.highlight:active {
+    background: blue;
+    border-bottom: 2px solid black;
+  }*/
+  
+  /* Commented out due to it not being used
+   .menu {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin:100px 0;
+  }
+  
+  .menu a {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 20px;
+    color: black;
+  } */
