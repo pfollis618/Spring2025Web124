@@ -1,1 +1,62 @@
-Hello, world!
+<!--Patrick Follis 4/13/2025-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript30 Project 2</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <!--Adapted from https://javascript30.com/
+    Mouse Move Shadow
+    -->
+    <!-- New Elements: offsetx, offsety offsetWidth, offsetHeight, offsetLeft, offsetTop, textShadow -->
+     <!-- Overall, changed h1 to nav, changed it so that nav grow when hovered or activated, added a bunch of stuff for the html,  -->
+</head>
+<body>
+    <!-- All of this except for the class="hero" was from me -->
+    <div class="wrapper">
+    <header id="top">
+        <h1>Weather</h1>
+    </header>
+    <div class="hero">
+        <nav>
+            <ul>
+                <li><a href="#section1">Clouds</a></li>
+                <li><a href="#section2">Lightning</a></li>
+                <li><a href="#section3">Tornadoes</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section id="section1">
+            <h2>Clouds</h2>
+            <div class="image"> <!-- all images came from Unsplash -->
+                <img src="Assets/cumulonimbus.jpg" alt="clouds">
+                <img src="Assets/cumulonimbus1.jpg" alt="clouds">
+                <img src="Assets/cumulonimbus2.jpg" alt="clouds">
+            </div>
+        </section>
+        <section id="section2">
+            <h2>Lightning</h2>
+            <div class="image">
+                <img src="Assets/lightning.jpg" alt="lightning">
+                <img src="Assets/lightning2.jpg" alt="lightning">
+                <img src="Assets/lighting3.jpg" alt="lightning">
+            </div>
+        </section>
+        <section id="section3">
+            <h2>Tornadoes</h2>
+            <div class="image">
+                <img src="Assets/tornado.jpg" alt="tornado">
+                <img src="Assets/tornado1.jpg" alt="tornado">
+                <img src="Assets/tornado2.jpg" alt="tornado">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="#top">Back to the Top</a>
+    </footer>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>
