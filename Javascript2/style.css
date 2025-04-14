@@ -1,0 +1,105 @@
+/*Patrick Follis 4/13/2025*/
+/* Adapted from https://javascript30.com/
+    Mouse Move Shadow */
+
+/* new code for nav, wrapper, h2, main, and images*/
+html {
+    color: black;
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0;
+    background-color: #009900;
+  }
+
+/* added wrapper */
+  .wrapper {
+    background-color: lightgray;
+    margin:2%;
+    padding:1em;
+  }
+  .hero {
+    min-height: 30vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color: black;
+  }
+
+  h1 {
+    /* text-shadow: 10px 10px 0 rgba(0,0,0,1); */
+    font-size: 100px;
+    text-align: center;
+  }
+
+  /* Navigation */
+  nav
+    {
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+    background-color: goldenrod;
+    }
+nav ul
+    {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style-type: none;
+    }
+    nav a
+    {
+    text-decoration:none;
+    padding-right: 5em;   
+    }
+    a:link
+    {
+    color:#000;    
+    }
+    a:visited
+    {
+    color:#000;    
+    }
+    a:hover
+    {
+    color: white;
+    }
+    a:active
+    {
+    color:lightgreen;   
+    }
+    /* made it so that the nav and the shadows increase in size when hovered over and when used */
+    nav li:hover {
+        transform: scale(1.12);
+    }
+    nav li:active {
+        transform: scale(1.25);
+    }
+
+/* Header 2 */
+h2 {
+    text-align: center;
+}
+/* Main */
+main {
+    background-color: #FFF;
+    margin:2%;
+    padding:1em;
+}
+/* Sections */
+.section1 {
+    min-height: -100vh;
+}
+img {
+    max-width: 30%;
+}
+.image {
+    display: flex;
+    justify-content: space-around;
+}
