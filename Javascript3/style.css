@@ -1,0 +1,15 @@
+/* Patrick Follis 4/18/2025 */
+/* All css was done by me */
+body {
+    margin:2%;
+    padding: 0 5em;
+}
+header {
+    font-size: 75px;
+}
+h1, h2, h5 {
+    text-align: center;
+}
+.size {
+    font-size: 1.3em;
+}
