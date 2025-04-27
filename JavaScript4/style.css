@@ -1,0 +1,120 @@
+/* Patrick Follis 4/25/2025 */
+/* Adapted from https://javascript30.com/
+    Slide in on Scroll */
+
+/*New Elements: transform, translateX, rotateX, scale()*/
+/* new code for background color, h1, added rotateX */
+/* Changed it so that the images flipped instead of sliding in, attempted to make a button to manually flip but failed */
+html {
+    box-sizing: border-box;
+    /* background: #ffc600; changed the background color*/
+    background-color: lightblue;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  h1 {
+    margin-top: 0;
+    /* added text-align */
+    text-align: center; 
+  }
+.main {
+    max-width: 95%;
+}
+/* img {
+    max-width: 95%;
+} */
+  .site-wrap {
+    max-width: 75%;/* changed from 700px */
+    margin: 100px auto;
+    background: white;
+    padding: 40px;
+    text-align: justify;
+    display: grid;
+  }
+  /* Attempted Button Code */
+  /* .navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+.nav-brand {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #08b;
+    flex-basis: 65%;
+    margin-left: 1em;
+}
+.flip-image {
+    margin: 1em;
+    padding: 1em;
+    border: 0;
+    border-radius: .5em;
+    font-size: 1rem;
+    color: white;
+    background-color: #70db70;
+    box-shadow: 0 .4em #29a329;
+    text-shadow: 1px 1px #29a329;
+} */
+/* added for design */
+  .grid1{
+    grid-column: 1/2;
+    margin: .5em;
+  }
+  .grid2 {
+    grid-column: 2/2;
+    margin: .5em;
+  }
+/* images code */
+  .align-left {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .align-right {
+    float: right;
+    margin-left: 20px;
+  }
+
+  .slide-in {
+    opacity: 0;
+    transition: all 1s; /* changed transition time from .5s */
+  }
+
+  .align-left.slide-in {
+    /* added rotateX */
+    transform: /*translateX(-30%)*/ rotateX(180deg) scale(0.95); 
+  }
+
+  .align-right.slide-in {
+    /* added rotateX */
+    transform: /*translateX(30%)*/ rotateX(180deg) scale(0.95);
+  }
+
+  /* .slide-in:hover {
+    transform: rotateX(90deg);
+  } */
+  .slide-in.active {
+    opacity: 1;
+    /* added rotateX */
+    transform: /*translateX(0%)*/rotateX(0deg) scale(1);
+  }
+
+  /* .flip-now.active {
+    transform:  rotateX(180deg) scale(0.95);
+  } */
