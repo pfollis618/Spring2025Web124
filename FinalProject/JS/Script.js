@@ -7,8 +7,7 @@ function calculationAdd() {
     // const addition = [];
     // Addition
     for (let i = 1; i< 11; i++) {
-        var answ = i + number;
-        var answer = answ.toFixed(2);
+        var answer = i + number;
         console.log(answer);
         // addition.push(i " + " number " = " answer);
         // console.log(addition);
@@ -31,8 +30,7 @@ function calculationSub(){
     // Subtraction
     var j = 1;
     while ( j<11) {
-        var answ = j - number;
-        var answer = answ.toFixed(2);
+        var answer = j - number;
         console.log(answer);
         const subtr = ` - `;
         const equ = ` = `;
@@ -48,8 +46,7 @@ function calculationMult(){
     // Multiplication
     var h = 1;
     do {
-        var answ = h * number;
-        var answer = answ.toFixed(2);
+        var answer = h * number;
         console.log(answer);
         const multip = ` * `;
         const equ = ` = `;
